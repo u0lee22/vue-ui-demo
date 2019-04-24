@@ -1,22 +1,15 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from "vue";
-import VueRouter from "vue-router";
-import store from "./store";
-
 import App from "./App";
 
-// router setup
+import store from "./store";
+import VueRouter from "vue-router";
 import routes from "./routes/router";
 
-// Plugins
 import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
 
-// MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
 
-// configure router
 const router = new VueRouter({
     routes, // short for routes: routes
     linkExactActiveClass: "nav-item active"
